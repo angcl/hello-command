@@ -14,6 +14,6 @@ if ( file_exists( $wpcli_angelocali_autoloader ) ) {
 }
 
 WP_CLI::add_command(
-	'hello',
+	'angelocali',
 	Hello_Command::class
 );

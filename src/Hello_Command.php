@@ -11,8 +11,10 @@ class Hello_Command extends WP_CLI_Command {
 	 *
 	 * @param $args
 	 * @param $assoc_args
+	 * 
+	 * @when before_wp_load
 	 */
-	public function world( $args, $assoc_args ) {
+	public function hello( $args, $assoc_args ) {
 		WP_CLI::success( 'Hello world!' );
 	}
 }
